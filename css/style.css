@@ -1,0 +1,450 @@
+* {
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  background-color: rgb(236, 36, 36);
+  color: snow;
+  text-shadow: 1px 1px 3px rgb(66, 8, 28);
+  font-size: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+}
+
+h3 {
+  font-size: 26px;
+  margin-bottom: -3%;
+}
+
+.numeroPokedex {
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 32px;
+  margin-bottom: -15%;
+}
+
+.inputContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 2%;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 100%;
+  width: 100%;
+  padding: 2%;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+form input#buscarPokemon {
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 4%;
+  font-size: 150%;
+}
+
+form button {
+  padding: 4% 4%;
+  background-color: black;
+  color: snow;
+  border-radius: 8px;
+  border: none;
+  opacity: 85%;
+}
+
+form button:hover {
+  background-color: rgb(49, 49, 49);
+  cursor: pointer;
+}
+
+.pokemonName {
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 32px;
+}
+
+.pokemonBox {
+  width: 120%;
+  height: 100%;
+  padding: 20%;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(34, 34, 34);
+  background-color: white;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+.abilityTitle {
+  font-size: 30px;
+  margin-bottom: 6%;
+  color: rgb(59, 57, 61);
+}
+
+.imgSize {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 25px;
+  font-family: "Brush Script MT", cursive;
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+.statBox {
+  width: 120%;
+  height: 100%;
+  padding: 16%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  border: 10px solid white;
+  border-radius: 15px;
+}
+
+.statsTitle {
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 50px;
+  margin-bottom: -10%;
+}
+
+.hp {
+  background-color: rgba(255, 255, 255);
+}
+
+.defense {
+  background-color: rgba(255, 255, 255);
+}
+
+.special-defense {
+  background-color: rgba(255, 255, 255);
+}
+
+.attack {
+  background-color: rgb(255, 66, 66);
+  box-shadow: 2px 2px 4px rgba(255, 66, 66, 0.3);
+}
+
+.special-attack {
+  background-color: rgb(255, 66, 66);
+  box-shadow: 2px 2px 4px rgba(255, 66, 66, 0.3);
+}
+
+.speed {
+  background-color: rgb(255, 66, 66);
+  box-shadow: 2px 2px 4px rgba(255, 66, 66, 0.3);
+}
+
+.icon {
+  width: 80px;
+  height: auto;
+  padding-top: 30%;
+}
+
+.fire {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(250, 90, 50);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.flying {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(9, 156, 241, 0.61);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.water {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(92, 148, 231);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.grass {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(60, 214, 60);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.poison {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(167, 50, 190);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.psychic {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(255, 93, 174);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.fairy {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(255, 147, 201);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.ice {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(159, 240, 243);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.normal {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(223, 187, 157, 0.897);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.ghost {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(68, 23, 110, 0.801);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.dark {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(81, 82, 77);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.bug {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(197, 184, 2);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.fighting {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(172, 5, 5, 0.829);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.ground {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(236, 181, 98);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.rock {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(216, 134, 40, 0.945);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.steel {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(195, 201, 202);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.dragon {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(64, 62, 216);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.electric {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(245, 220, 1, 0.877);
+  width: 60%;
+  padding: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5%;
+  margin-top: -3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
