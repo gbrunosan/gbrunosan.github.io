@@ -54,15 +54,14 @@ form {
 }
 
 form input#buscarPokemon {
-  width: 100%;
   border: none;
   outline: none;
   text-align: center;
-  padding: 4%;
   font-size: 140%;
 }
 
 form button {
+  margin-top: 2%;
   padding: 4% 4%;
   display: grid;
   width: 25%;
@@ -96,12 +95,12 @@ form button:hover {
 .numeroPokedex {
   font-family: "Pokemon Solid", sans-serif;
   font-size: 200%;
+  margin-bottom: -15% ;
 }
 
 .pokemonName {
   font-family: "Pokemon Solid", sans-serif;
-  font-size: 200%;
-  color: pink;
+  font-size: 185%;
 }
 
 .imgSize {
