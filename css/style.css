@@ -45,7 +45,7 @@ form {
   border: 1px solid black;
   border-radius: 10px;
   font-size: 100%;
-  width: 45vh;
+  width: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,12 +93,12 @@ form button:hover {
 }
 
 .numeroPokedex {
-  font-family: "Pokemon Solid", sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-size: 200%;
-  margin-bottom: -15% ;
 }
 
 .pokemonName {
+  margin-top: -5%;
   font-family: "Pokemon Solid", sans-serif;
   font-size: 185%;
 }
