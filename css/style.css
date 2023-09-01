@@ -89,13 +89,13 @@ div.pokemonContainer{
       .numeroPokedex {
         font-family: "Pokemon Solid", sans-serif;
         font-size: 190%;
-        margin-top: -10%;
+        margin-top: -13%;
       }
       
       .pokemonName {
         font-family: "Pokemon Solid", sans-serif;
         font-size: 260%;
-        margin-bottom: 18%;
+        margin-bottom: 5%;
       }
 
       .pokemonBox{
