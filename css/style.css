@@ -95,6 +95,7 @@ form button:hover {
 .numeroPokedex {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 200%;
+  font-weight: bold;
 }
 
 .pokemonName {
