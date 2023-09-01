@@ -45,7 +45,7 @@ form {
   border: 1px solid black;
   border-radius: 10px;
   font-size: 100%;
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,11 +77,17 @@ form button:hover {
   cursor: pointer;
 }
 
+div.pokemonContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .pokemonBox {
-  width: 45vh;
-  height: 700px;
-  padding-bottom: 6%;
-  margin-top: 10%;
+  width: 25%;
+  height: 800px;
+  margin-top: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,15 +98,17 @@ form button:hover {
   border-radius: 15px;
 }
 
+
 .numeroPokedex {
   font-family: "Pokemon Solid", sans-serif;
-  font-size: 200%;
+  font-size: 190%;
+  margin-top: -2%;
 }
 
 .pokemonName {
-  margin-top: -5%;
   font-family: "Pokemon Solid", sans-serif;
-  font-size: 185%;
+  font-size: 260%;
+  margin-top: -10%;
 }
 
 .imgSize {
@@ -116,21 +124,6 @@ form button:hover {
   font-size: 200%;
   margin-bottom: 10%;
   color: rgb(59, 57, 61);
-}
-
-.statBox {
-  width: 45vh;
-  height: 700px;
-  padding-bottom: 6%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  color: rgb(34, 34, 34);
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
-  border-radius: 15px;
 }
 
 .statsTitle {
@@ -175,7 +168,7 @@ table {
 }
 
 .icon {
-  margin-top: 25px;
+  margin-top: 100%;
   width: 80px;
   height: auto;
 }

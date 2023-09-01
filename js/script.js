@@ -10,11 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const pokemonContainer = document.querySelector("div.pokemonContainer");
       pokemonContainer.innerHTML = "";
 
-      const pokemonStatContainer = document.querySelector(
-        "div.pokemonStatContainer"
-      );
-      pokemonStatContainer.innerHTML = "";
-
       fetch(`https://pokeapi.co/api/v2/pokemon/${buscarPokemon}`)
         .then((response) => response.json())
         .then((data) => {
@@ -22,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
           showPokemon.classList.add("pokemonBox");
 
           let showStats = document.createElement("div");
-          showStats.classList.add("statBox");
+          showStats.classList.add("pokemonBox");
 
           let typesHTML = "";
           data.types.forEach((typePokemon) => {
@@ -46,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
             totalStats += statsPokemon.base_stat;
           });
           showPokemon.innerHTML = `
-                        <p class="numeroPokedex">#${data.id}</p>
-                        <div class="pokemonName"><h2>${data.name.replace(
+                        <h2 class="numeroPokedex">#${data.id}</h2>
+                        <h1 class="pokemonName">${data.name.replace(
                           /-/g,
                           " "
-                        )}</h2></div> 
+                        )}</h1>
                         <img class="imgSize" src="${
                           data.sprites.front_default
                         }"/>
