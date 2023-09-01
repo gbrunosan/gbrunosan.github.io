@@ -1,7 +1,7 @@
 * {
+  flex-direction: column;  
   padding: 0;
   margin: 0;
-  flex-direction: column;
 }
 
 body {
@@ -47,7 +47,7 @@ h3 {
 }
 
 form {
-  margin-top: 2%;
+  margin-top: 5%;
   border: 1px solid black;
   border-radius: 10px;
   font-size: 100%;
@@ -78,15 +78,10 @@ form button:hover {
   cursor: pointer;
 }
 
-.pokemonName {
-  font-family: "Pokemon Solid", sans-serif;
-  font-size: 150%;
-}
-
 .pokemonBox {
-  width: 40vh;
-  height: 100%;
-  padding: 6%;
+  width: 45vh;
+  height: 700px;  
+  padding-bottom: 6%;
   margin-top: 10%;
   display: flex;
   align-items: center;
@@ -98,10 +93,9 @@ form button:hover {
   border-radius: 15px;
 }
 
-.abilityTitle {
-  font-size: 30px;
-  margin-bottom: 6%;
-  color: rgb(59, 57, 61);
+.pokemonName {
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 150%;
 }
 
 .imgSize {
@@ -113,20 +107,17 @@ form button:hover {
   margin-bottom: 8%;
 }
 
-table {
-  border-collapse: collapse;
-  font-size: 25px;
-  font-family: "Brush Script MT", cursive;
-  font-weight: bold;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 20px;
+.abilityTitle {
+  font-size: 30px;
+  margin-bottom: 10%;
+  color: rgb(59, 57, 61);
 }
 
+
 .statBox {
-  width: 38vh;
-  height: 100%;
-  padding: 6%;
+  width: 43vh;
+  height: 710px;
+  padding-bottom: 6%;
   margin-top: 10px;
   margin-bottom: 15px;
   display: flex;
@@ -142,7 +133,16 @@ table {
 .statsTitle {
   font-family: "Pokemon Solid", sans-serif;
   font-size: 50px;
-  margin-bottom: -10px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 25px;
+  font-family: "Brush Script MT", cursive;
+  font-weight: bold;
+  height: 50%;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .hp {
@@ -175,7 +175,7 @@ table {
 .icon {
   width: 80px;
   height: auto;
-  padding-top: 30%;
+  margin-top: 30px;
 }
 
 .fire {
