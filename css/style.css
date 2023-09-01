@@ -45,7 +45,7 @@ form {
   border: 1px solid black;
   border-radius: 10px;
   font-size: 100%;
-  width: 40vh;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +79,7 @@ form button:hover {
 
 .pokemonBox {
   width: 45vh;
-  height: 73vh;
+  height: 700px;
   padding-bottom: 6%;
   margin-top: 10%;
   display: flex;
@@ -120,7 +120,7 @@ form button:hover {
 
 .statBox {
   width: 45vh;
-  height: 73vh;
+  height: 700px;
   padding-bottom: 6%;
   margin-top: 5%;
   margin-bottom: 5%;
