@@ -79,7 +79,7 @@ form button:hover {
 
 .pokemonBox {
   width: 45vh;
-  height: 700px;  
+  height: 73vh;
   padding-bottom: 6%;
   margin-top: 10%;
   display: flex;
@@ -93,9 +93,8 @@ form button:hover {
 }
 
 .numeroPokedex {
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Pokemon Solid", sans-serif;
   font-size: 200%;
-  font-weight: bold;
 }
 
 .pokemonName {
@@ -121,7 +120,7 @@ form button:hover {
 
 .statBox {
   width: 45vh;
-  height: 700px;
+  height: 73vh;
   padding-bottom: 6%;
   margin-top: 5%;
   margin-bottom: 5%;
