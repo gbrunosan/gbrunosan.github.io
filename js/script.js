@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const frmPesquisa = document.querySelector("form");
+    
 
   frmPesquisa.onsubmit = (ev) => {
     ev.preventDefault();
 
-    const buscarPokemon = ev.target.buscarPokemon.value;
+    const buscarPokemon = ev.target.buscarPokemon.value.toLowerCase().trim().replace(/ /g, "-");
 
     const carregarPokemon = () => {
       const pokemonContainer = document.querySelector("div.pokemonContainer");
@@ -72,7 +73,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
           pokemonContainer.appendChild(showPokemon);
           pokemonContainer.appendChild(showStats);
-        }).catch(e=>console.log("deu ruim aqui"));
+        })
+        .catch((error)=> {
+              const pokemonContainer = document.querySelector("div.pokemonContainer");
+              pokemonContainer.innerHTML = "";
+
+              let showPokemon = document.createElement("div");
+              showPokemon.classList.add("pokemonError");
+              showPokemon.innerHTML = `
+                <h1 class = "titleError"> Pokémon não encontrado D:</h1>
+                <img class = "imgError" src="https://i.redd.it/u6vz78jfhn281.png">
+                <h3 class = "messageError"> Verifique se nome do pokemon está correto</h3>
+              `
+
+              pokemonContainer.appendChild(showPokemon);
+        });
     };
 
     if (buscarPokemon === "") {
