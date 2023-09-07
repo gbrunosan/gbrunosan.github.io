@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
           showPokemon.classList.add("pokemonBox");
 
           let showStats = document.createElement("div");
-          showStats.classList.add("pokemonBox");
+          showStats.classList.add("pokemonStatBox");
 
           let typesHTML = "";
           data.types.forEach((typePokemon) => {

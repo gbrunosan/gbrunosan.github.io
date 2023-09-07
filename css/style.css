@@ -40,7 +40,33 @@ div.pokemonContainer{
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+  div.pokemonContainer{
+    width: 100%;
+    height: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.pokemonError {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .titleError {
+    font-size: 90%;
+    color: red;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  .messageError {
+    font-size: 75%;
+    color: gray;
+  }
     .inputContainer {
       width: 80%;
       display: flex;
@@ -89,19 +115,35 @@ div.pokemonContainer{
       .numeroPokedex {
         font-family: "Pokemon Solid", sans-serif;
         font-size: 190%;
-        margin-top: -13%;
       }
       
       .pokemonName {
         font-family: "Pokemon Solid", sans-serif;
         font-size: 260%;
-        margin-bottom: 5%;
       }
 
       .pokemonBox{
         width: 96%;
-        height: 700px;
+        height: 50%;
+        minimum-height: 700px;
         margin-top: 4%;
+        padding-bottom: 4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(34, 34, 34);
+        background-color: white;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        }
+
+      .pokemonStatBox{
+        width: 96%;
+        height: 50%;
+        minimum-height: 700px;
+        margin-top: 4%;
+        padding-bottom: 4%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -114,7 +156,7 @@ div.pokemonContainer{
     
 }
 
-@media (min-width: 766px) {
+@media (min-width: 968px) {
   div.pokemonError {
     display: flex;
     justify-content: center;
@@ -193,14 +235,14 @@ div.pokemonContainer{
   .pokemonName {
     font-family: "Pokemon Solid", sans-serif;
     font-size: 260%;
-    margin-top: -7%;
+    margin-top: -5%;
   }
 
   .pokemonBox{
-    width: 23%;
-    height: 730px;
+    width: 30%;
+    height: 700px;
     margin-top: 2%;
-    margin-bottom: 2%;
+    padding-bottom: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,7 +252,22 @@ div.pokemonContainer{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     }
-}
+    .pokemonStatBox{
+      width: 30%;
+      height: 700px;
+      margin-top:2%;
+      margin-bottom: 2%;
+      padding-bottom: 2%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(34, 34, 34);
+      background-color: white;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+      border-radius: 15px;
+      }
+    }  
 
 .imgSize {
   width: 60%;
