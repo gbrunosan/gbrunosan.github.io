@@ -52,7 +52,7 @@ div.pokemonContainer{
   div.pokemonError {
     display: flex;
     height: 30%;
-    margin-top: -230%;
+    margin-top: -300%;
     justify-content: center;
     align-items: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -70,7 +70,7 @@ div.pokemonContainer{
   }
 
   .messageError {
-    font-size: 120%;
+    font-size: 110%;
     color: gray;
   }
     .inputContainer {

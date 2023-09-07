@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
               showPokemon.innerHTML = `
                 <h1 class = "titleError"> Pokémon não encontrado D:</h1>
                 <img class = "imgError" src="https://i.redd.it/u6vz78jfhn281.png">
-                <h3 class = "messageError"> Verifique se nome do pokemon está correto</h3>
+                <h3 class = "messageError"> O nome do pokemon está correto?</h3>
               `
 
               pokemonContainer.appendChild(showPokemon);
