@@ -75,8 +75,7 @@ div.pokemonContainer{
     
     form {
       margin-top: 5%;
-      min-width: 320px;
-      border: 1px solid black;
+      min-width: 300px;
       border-radius: 10px;
       font-size: 110%;
       width: 80%;
