@@ -296,16 +296,17 @@ div.pokemonContainer{
 
 table {
   border-collapse: collapse;  
-  font-size: 180%;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: 400;
   text-align: center;
-  box-shadow: 1px 1px 4px rgba(5, 0, 0, 0.2);
+  box-shadow: 1px 2px 4px rgba(5, 0, 0, 0.2);
 }
 td{
   width: 115px;
 }
 .statName{
   width: 70%; 
+  min-width: 240px;
 }
 
 .hp {
