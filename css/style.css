@@ -43,7 +43,6 @@ div.pokemonContainer{
 @media (max-width: 968px) {
   div.pokemonContainer{
     width: 100%;
-    height: 1600px;
   }
 
   div.pokemonError {
@@ -119,19 +118,18 @@ div.pokemonContainer{
 
       .numeroPokedex {
         font-family: 'Poppins', sans-serif;
-        font-size: 190%;
+        font-size: 175%;
       }
       
       .pokemonName {
         font-family: 'Poppins', sans-serif;
-        font-size: 260%;
+        font-size: 235%;
       }
 
       .pokemonBox{
         width: 500px;
-        height: 550px;
-        min-height: 550px;
-        padding-bottom: 4%;
+        height: 620px;
+        min-height: 620px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -143,8 +141,8 @@ div.pokemonContainer{
 
       .pokemonStatBox{
         width: 500px;
-        height: 550px;
-        min-height: 550px;
+        height: 620px;
+        min-height: 620px;
         margin-top: 4%;
         padding-bottom: 4%;
         display: flex;
@@ -209,6 +207,7 @@ div.pokemonContainer{
     background-color:rgb(75, 75, 75);
     color: white;
     font-size: 140%;
+    padding: 20%;
     width: 100%;
   }
   
