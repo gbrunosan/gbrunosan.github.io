@@ -118,20 +118,19 @@ div.pokemonContainer{
 
       .numeroPokedex {
         font-family: 'Poppins', sans-serif;
-        font-size: 175%;
+        font-size: 28px;
       }
       
       .pokemonName {
         font-family: 'Poppins', sans-serif;
-        font-size: 235%;
+        font-size: 40px;
       }
 
       .pokemonBox{
         margin-top: 10px;
         width: 92%;
-        height: 620px;
-        max-width: 620px;
-        min-width: 460px;
+        height: 700px;
+        max-width: 460px;
         min-height: 620px;
         padding: 10px 0;
         display: flex;
@@ -145,9 +144,8 @@ div.pokemonContainer{
 
       .pokemonStatBox{
         width: 92%;
-        height: 620px;
-        max-width: 620px;
-        min-width: 460px;
+        height: 700px;
+        max-width: 460px;
         min-height: 620px;
         padding: 10px 0;
         margin-top: 4%;
@@ -295,19 +293,17 @@ div.pokemonContainer{
 }
 
 table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-collapse: collapse;  
   font-size: 180%;
   font-weight: bold;
   text-align: center;
   box-shadow: 1px 1px 4px rgba(5, 0, 0, 0.2);
 }
-
 td{
-  width: 238px;
-  
+  width: 115px;
+}
+.statName{
+  width: 70%; 
 }
 
 .hp {
