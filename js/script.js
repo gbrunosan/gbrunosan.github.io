@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const frmPesquisa = document.querySelector("form");
     
+  function capitalizar(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
   frmPesquisa.onsubmit = (ev) => {
     ev.preventDefault();
@@ -20,16 +23,20 @@ document.addEventListener("DOMContentLoaded", () => {
           let showStats = document.createElement("div");
           showStats.classList.add("pokemonStatBox");
 
+          // ...
+
           let typesHTML = "";
           data.types.forEach((typePokemon) => {
-            typesHTML += `<h3 class="${typePokemon.type.name}">${typePokemon.type.name}</h3>`;
+            const capitalizedTypeName = capitalizar(typePokemon.type.name);
+            typesHTML += `<h3 class="${capitalizedTypeName}">${capitalizedTypeName}</h3>`;
           });
+
           let abilitiesHTML = "<h3 class='abilityTitle'>Habilidades: </h3>";
           data.abilities.forEach((abilityPokemon) => {
-            abilitiesHTML += `<div class="ability"><h3>${abilityPokemon.ability.name.replace(
+            abilitiesHTML += `<div class="ability"><h3>${capitalizar(abilityPokemon.ability.name.replace(
               /-/g,
               " "
-            )}</h3></div>`;
+            ))}</h3></div>`;
           });
           let totalStats = 0;
           let statnameHTML = "";
@@ -43,10 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
           });
           showPokemon.innerHTML = `
                         <h2 class="numeroPokedex">#${data.id}</h2>
-                        <h1 class="pokemonName">${data.name.replace(
-                          /-/g,
-                          " "
-                        )}</h1>
+                        <h1 class="pokemonName">${capitalizar(data.name.replace(/-/g, " "))}</h1>
                         <img class="imgSize" src="${
                           data.sprites.front_default
                         }"/>
