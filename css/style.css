@@ -144,7 +144,7 @@ div.pokemonContainer{
       .pokemonStatBox{
         width: 500px;
         height: 550px;
-        min-height: 5500px;
+        min-height: 550px;
         margin-top: 4%;
         padding-bottom: 4%;
         display: flex;
