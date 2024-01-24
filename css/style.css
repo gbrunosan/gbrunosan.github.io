@@ -128,9 +128,12 @@ div.pokemonContainer{
 
       .pokemonBox{
         margin-top: 10px;
-        width: 500px;
+        width: 92%;
         height: 620px;
+        max-width: 620px;
+        min-width: 460px;
         min-height: 620px;
+        padding: 10px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -141,9 +144,12 @@ div.pokemonContainer{
         }
 
       .pokemonStatBox{
-        width: 500px;
+        width: 92%;
         height: 620px;
+        max-width: 620px;
+        min-width: 460px;
         min-height: 620px;
+        padding: 10px 0;
         margin-top: 4%;
         display: flex;
         align-items: center;
